@@ -1,0 +1,15 @@
+{
+  "name": "aoc2024-day2",
+  "version": "1.0.0",
+  "main": "day2.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "garret patten",
+  "license": "MIT",
+  "description": "Advent of Code 2024: Day 2",
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  }
+}
