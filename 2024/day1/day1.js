@@ -24,8 +24,26 @@ function solve() {
         acc += Math.abs(sortedLeftList[i] - sortedRightList[i]);
     }
 
-    console.log('The solution is: ' + acc);
-    return acc;
+    console.log('The solution to part 1 is: ' + acc);
+
+    let similarityAcc = 0;
+    let similarityScore = 0;
+    for (let leftItem of sortedLeftList) {
+        if (sortedRightList.includes(leftItem)) {
+            for (let rightItem of sortedRightList) {
+                if (leftItem == rightItem) {
+                    similarityAcc++;
+                } else if (leftItem < rightItem) {
+                    break;
+                }
+            }
+
+            similarityScore += (leftItem * similarityAcc);
+            similarityAcc = 0;
+        }
+    }
+
+    console.log('The solution to part 2 is: ' + similarityScore);
 }
 
 solve();
