@@ -1,5 +1,5 @@
 {
-  "name": "2024-day1",
+  "name": "aoc2024-day1",
   "version": "1.0.0",
   "main": "day1.js",
   "scripts": {
@@ -8,7 +8,7 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "description": "2024 Advent of Code: Day 1",
+  "description": "Advent of Code 2024: Day 1",
   "dependencies": {
     "fs": "^0.0.1-security"
   }
